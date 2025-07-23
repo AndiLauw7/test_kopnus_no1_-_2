@@ -1,8 +1,6 @@
-function faktorial(n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  } else {
-    return n * faktorial(n - 1);
-  }
+let n = 6;
+let hasil = 1;
+for (let i = 1; i <= n; i++) {
+  hasil *= i;
 }
-console.log(faktorial(6));
+console.log(hasil);

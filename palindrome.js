@@ -1,12 +1,10 @@
-function palindrome(text) {
-  const strText = text.toLowerCase().replace(/[^a-z0-9]/g, "");
-  const joinStr = strText.split("").reverse().join("");
-  if (strText === joinStr) {
-    console.log(`Kata ${text} merupakan palindrome`);
-    return true;
-  } else {
-    console.log(`Kata ${text} bukan merupakan palindrome`);
-    return false;
-  }
+let kataPalindrome = "katak";
+let cekkataPalindrome = "";
+for (let i = kataPalindrome.length - 1; i >= 0; i--) {
+  cekkataPalindrome += kataPalindrome[i];
 }
-palindrome("katak");
+if (cekkataPalindrome === kataPalindrome) {
+  console.log(`Kata "${kataPalindrome}" merupakan palindrome`);
+} else {
+  console.log(`Kata "${kataPalindrome}" bukan merupakan palindrome`);
+}
